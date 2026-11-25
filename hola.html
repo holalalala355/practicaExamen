@@ -1,0 +1,25 @@
+mínimo 5 personas 
+max 100 
+sin interfaz grafica 
+que vaya eligiendo se vayan eliminando
+
+
+
+nombres = []
+
+cantidad = int(input("¿Cuántos nombres quieres agregar?: "))
+
+for i in range(cantidad):
+    nombre = input(f"Ingresa el nombre #{i+1}: ")
+    nombres.append(nombre)
+
+print("Lista de nombres:")
+print(nombres)
+ 
+
+
+import random
+
+ganador = random.choice(nombres)
+
+print("El ganador es:", ganador)  
